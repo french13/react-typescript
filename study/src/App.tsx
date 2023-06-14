@@ -2,10 +2,12 @@ import {useState} from 'react'
 import {Routes, Route, Link} from 'react-router-dom'
 import UseRef from './components/UseRef'
 import UseImperativeHandle from './components/UseImperativeHandle'
+import UseEffect from './components/UseEffect'
 
 const menuList = [
   {title: 'useRef', link: '/useRef'},
-  {title: 'useImperativeHandle', link: '/useimperativehandle'}
+  {title: 'useImperativeHandle', link: '/useimperativehandle'},
+  {title: 'useEffect', link: '/useeffect'}
 ]
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/useRef" element={<UseRef />} />
         <Route path="/useimperativehandle" element={<UseImperativeHandle />} />
+        <Route path="/useeffect" element={<UseEffect />} />
       </Routes>
     </div>
   )
