@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <p>스터디</p>
+      <p>React Hook</p>
       <div>
         {menu.map((item, index) => (
           <button key={index}>

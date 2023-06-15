@@ -21,6 +21,11 @@ const UseRef = () => {
   // 예제2
 
   const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    inputRef.current?.focus()
+  }, [])
+
   const checkRef = () => {
     alert(inputRef.current?.value)
   }
@@ -28,7 +33,7 @@ const UseRef = () => {
   const [move, setMove] = useState(true)
   return (
     <div>
-      {move === false ? (
+      {move === true ? (
         <>
           <p
             onClick={() => {
